@@ -1,4 +1,7 @@
 const personForm = document.querySelector('#personForm')
+const italicsButton = document.querySelector('#italics')
+const boldButton = document.querySelector('#bold')
+const underlineButton = document.querySelector('#underline')
 
 function handleSubmit(ev) {
   ev.preventDefault()
@@ -19,4 +22,22 @@ function handleSubmit(ev) {
 
 }
 
+function onItalics(ev) {
+  ev.preventDefault()
+  document.querySelector('#personInfo').style.fontStyle = "italic"
+}
+
+function onBold(ev) {
+  ev.preventDefault()
+  document.querySelector('#personInfo').style.fontWeight = "bold"
+}
+
+function onUnderline(ev) {
+  ev.preventDefault()
+  document.querySelector('#personInfo').style.textDecoration = "underline"
+}
+
 personForm.addEventListener('submit', handleSubmit)
+italicsButton.addEventListener('click', onItalics)
+boldButton.addEventListener('click', onBold)
+underlineButton.addEventListener('click', onUnderline)
