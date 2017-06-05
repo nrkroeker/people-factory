@@ -2,13 +2,13 @@
 
 ## Day 1 Homework
 
-* Add another input to the form.
-* Use the values from both inputs in the 'h1'.
+* Add another input to the form. ^
+* Use the values from both inputs in the 'h1'. ^
 
 ###Super Mega Bonus Credit
 
-* Add an empty paragraph to the page.
-* Use the form values to do something with that paragraph.
+* Add an empty paragraph to the page. ^
+* Use the form values to do something with that paragraph. ^
 
 ### Super Mega Bonnus Credit Hyper Fighting
 

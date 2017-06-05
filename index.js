@@ -15,7 +15,7 @@ function handleSubmit(ev) {
 
   document.querySelector('#personInfo').textContent = name + ' is ' + age + ' years old. Her favorite color is ' + color + '!'
 
-  document.style.color = color
+  document.querySelector('#personInfo').style.color = color
 
 }
 
