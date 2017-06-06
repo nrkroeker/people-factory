@@ -6,8 +6,10 @@
       <title>People Factory</title>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="style.css" rel="stylesheet" />
 </head>
 <body>
+  <img src="logo.png" alt="IUPUI logo" class="schoolLogo"/>
   <h1>a Factory of People</h1>
 
   <section>
@@ -24,11 +26,33 @@
           <br />
           <label for="textColor">Favorite color</label>
           <input type="text" name="textColor" />
+          <br />
+          <br />
+          <label for="school">School</label>
+          <select name="school" class="school">
+              <option value="1">Purdue</option>
+              <option value="2">IUPUI</option>
+              <option value="3">Saint Mary's</option>
+              <option value="4">Earlham</option>
+              <option value="5">Hanover</option>
+              <option value="6">IU</option>
+              <option value="7">Butler</option>
+              <option value="8">Ball State</option>
+              <option value="9">Rose Hulman</option>
+              <option value="10">Wabash</option>
+              <option value="11">Franklin</option>
+          </select>
         </p>
         <p>
           <button type="submit">Go</button>
         </p>
       </form>
+
+      <p>
+        <button type="button" id="italics">Italics</button>
+        <button type="button" id="bold">Bold</button>
+        <button type="button" id="underline">Underline</button>
+      </p>
 
       <p id="personInfo">
       </p>
