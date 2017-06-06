@@ -38,48 +38,47 @@ function onUnderline(ev) {
   document.querySelector('#personInfo').style.textDecoration = "underline"
 }
 
-function checkSchool(ev) {
-  ev.preventDefault()
-  const select = document.getElementById("#school")
+function checkSchool() {
+  const select = document.querySelector("select")
   const answer = select.options[select.selectedIndex].value
 
-  document.getElementById("#personInfo").textContent = answer
-
-  const image = document.getElementById(".schoolLogo")
+  document.querySelector("#personInfo").textContent = answer
+  console.log(typeof answer)
+  const image = document.querySelector(".schoolLogo")
 
   switch(answer) {
-    case "Purdue":
-      image.src = "logos/purdue.png"
+    case '1':
+      image.src = "./logos/purdue.png"
       break;
-    case "IUPUI":
-      image.src = "logos/iupui.png"
+    case '2':
+      image.src = "./logos/iupui.png"
       break;
-    case "Saint Mary's":
-      image.src = "logos/saintmarys.png"
+    case '3':
+      image.src = "./logos/saintmarys.png"
       break;
-    case "Earlham":
-      image.src = "logos/earlham.jpg"
+    case '4':
+      image.src = "./logos/earlham.jpg"
       break;
-    case "Hanover":
-      image.src = "logos/hanover.png"
+    case '5':
+      image.src = "./logos/hanover.png"
       break;
-    case "IU":
-      image.src = "logos/iu.png"
+    case '6':
+      image.src = "./logos/iu.png"
       break;
-    case "Butler":
-      image.src = "logos/butler.jpg"
+    case '7':
+      image.src = "./logos/butler.jpg"
       break;
-    case "Ball State":
-      image.src = "logos/ballstate.png"
+    case '8':
+      image.src = "./logos/ballstate.png"
       break;
-    case "Rose Hulman":
-      image.src = "logos/rosehulman.png"
+    case '9':
+      image.src = "./logos/rosehulman.png"
       break;
-    case "Wabash":
-      image.src = "logos/wabash.png"
+    case '10':
+      image.src = "./logos/wabash.png"
       break;
-    case "Franklin":
-      image.src = "logos/franklin.jpg"
+    case '11':
+      image.src = "./logos/franklin.jpg"
       break;
     default:
       console.log("what.")
