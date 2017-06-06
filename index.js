@@ -20,6 +20,7 @@ function handleSubmit(ev) {
 
   document.querySelector('#personInfo').style.color = color
 
+  checkSchool()
 }
 
 function onItalics(ev) {
@@ -35,6 +36,15 @@ function onBold(ev) {
 function onUnderline(ev) {
   ev.preventDefault()
   document.querySelector('#personInfo').style.textDecoration = "underline"
+}
+
+function checkSchool() {
+  const school = document.querySelector('.school').value
+
+  switch(school) {
+    case
+  }
+
 }
 
 personForm.addEventListener('submit', handleSubmit)
