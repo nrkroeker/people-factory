@@ -42,8 +42,6 @@ function checkSchool() {
   const select = document.querySelector("select")
   const answer = select.options[select.selectedIndex].value
 
-  document.querySelector("#personInfo").textContent = answer
-  console.log(typeof answer)
   const image = document.querySelector(".schoolLogo")
 
   switch(answer) {
