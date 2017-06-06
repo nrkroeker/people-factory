@@ -38,11 +38,52 @@ function onUnderline(ev) {
   document.querySelector('#personInfo').style.textDecoration = "underline"
 }
 
-function checkSchool() {
-  const school = document.querySelector('.school').value
+function checkSchool(ev) {
+  ev.preventDefault()
+  const select = document.getElementById("#school")
+  const answer = select.options[select.selectedIndex].value
 
-  switch(school) {
-    case
+  document.getElementById("#personInfo").textContent = answer
+
+  const image = document.getElementById(".schoolLogo")
+
+  switch(answer) {
+    case "Purdue":
+      image.src = "logos/purdue.png"
+      break;
+    case "IUPUI":
+      image.src = "logos/iupui.png"
+      break;
+    case "Saint Mary's":
+      image.src = "logos/saintmarys.png"
+      break;
+    case "Earlham":
+      image.src = "logos/earlham.jpg"
+      break;
+    case "Hanover":
+      image.src = "logos/hanover.png"
+      break;
+    case "IU":
+      image.src = "logos/iu.png"
+      break;
+    case "Butler":
+      image.src = "logos/butler.jpg"
+      break;
+    case "Ball State":
+      image.src = "logos/ballstate.png"
+      break;
+    case "Rose Hulman":
+      image.src = "logos/rosehulman.png"
+      break;
+    case "Wabash":
+      image.src = "logos/wabash.png"
+      break;
+    case "Franklin":
+      image.src = "logos/franklin.jpg"
+      break;
+    default:
+      console.log("what.")
+    break;
   }
 
 }
